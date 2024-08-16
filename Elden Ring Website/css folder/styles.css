@@ -1,0 +1,249 @@
+/* After going through my main css file I realized that after not working on it for a couple weeks 
+it was really confusing trying to remember what does what. So I went back through and put comments above each 
+set and tried to explain what it did. I really should've done this from the start to more easily help myself when 
+I needed to change something. While I was going through I realized that somethings that I had didnt actually even do 
+anything because when I was originally working on this project I would make an alter the text color for example and create 
+another div and change it. So by going through each individual div I was able to clean up my css and make it more readable for the future. */
+
+/* Styles for the body element */
+body {
+    background-image: url('eldenringpic.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    background-color: black; 
+}
+
+/* Styles for the header element */
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Styles for the h1 element within the header */
+header h1 {
+    color: gold;
+}
+
+/* Styles for the main content text box */
+.text-box {
+    position: fixed;
+    top: 10%;
+    left: 7%;
+    width: 85%;
+    height: 80%;
+    margin: auto;
+    z-index: 8;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Styles for the navigation links */
+.text-box nav {
+    margin-bottom: 30px;
+}
+
+/* Styles for the navigation links on hover */
+.text-box nav ul li a:hover {
+    color: gold;
+}
+
+/* Styles for the tab panes */
+.tab-pane {
+    display: none;
+}
+
+/* Styles for the active tab pane */
+.tab-pane.active {
+    display: block;
+}
+
+/* Styles for headings and paragraphs within tab panes */
+.tab-pane h2,
+.tab-pane p {
+    color: white;
+}
+
+/* Styles for headings */
+h2 {
+    color: white;
+}
+
+/* Styles for paragraphs */
+p {
+    color: white;
+    text-align: center;
+}
+
+/* Styles for images within centered content */
+.centered-content img {
+    max-width: 50%;
+    margin-bottom: 20px;
+}
+
+/* Styles for centered content */
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 30%;
+    padding-right: 30%;
+    text-align: left;
+}
+
+/* Styles for centered content paragraphs */
+.centered-content, p {
+    text-align: center;
+}
+
+/* Styles for the George R. R. Martin section */
+.george {
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+/* Styles for the image within the George R. R. Martin section */
+.george img {
+    max-width: 28%;
+    height: auto;
+    float: left;
+    text-align: center;
+}
+
+/* Styles for the awards section */
+.coolpic {
+    float: right;
+    margin-right: 20px;
+    text-align: center;
+}
+
+/* Styles for the image within the awards section */
+.coolpic img {
+    max-width: 20%;
+    height: auto;
+    float: right;
+}
+
+/* Styles for the character grid layout */
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+/* Styles for individual character items within the grid */
+.character-item {
+    text-align: center;
+}
+
+/* Styles for images within character items */
+.character-item img {
+    max-width: 50%;
+    height: auto;
+}
+
+/* Styles for paragraphs within character items */
+.character-item p {
+    margin: 10px 0;
+}
+
+/* Styles for the grid layout in the about section */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+}
+
+/* Styles for individual items within the about section grid */
+.about-item {
+    text-align: center;
+}
+
+/* Styles for images within individual items in the about section */
+.about-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styles for paragraphs within individual items in the about section */
+.about-item p {
+    margin: 10px 0;
+}
+
+/* Styles for the title section */
+.titleyo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styles for the shadow tree section */
+.shadowtree {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Styles for the image within the shadow tree section */
+.shadowtree img {
+    max-width: 30%;
+    height: auto;
+    margin-right: 40px;
+}
+
+/* Styles for the content within the shadow tree section */
+.shadowtree-content {
+    flex: 1;
+    color: white;
+}
+
+/* Styles for links within the content of the shadow tree section */
+.shadowtree-content a {
+    color: gold;
+    padding: 10px 20px;
+    text-decoration: none; 
+    border-radius: 5px;
+}
+
+/* Styles for the impaler section */
+.impaler {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Styles for the image within the impaler section */
+.impaler img {
+    max-width: 30%;
+    height: auto;
+    margin-right: 40px;
+}
+
+/* Styles for the content within the impaler section */
+.impaler-content {
+    flex: 1;
+    color: white;
+}
+
+/* Styles for links within the content of the about section items */
+.about-item a {
+    color: gold;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Styles for the footer */
+footer p {
+    margin-top: 810px;
+    color: gold;
+    font-size: large;
+}

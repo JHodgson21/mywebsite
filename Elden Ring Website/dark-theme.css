@@ -1,0 +1,61 @@
+/* dark-theme.css */
+
+/* Body background color */
+body {
+    background-image: url('eldenringpicdark.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    background-color: black; 
+}
+/* Header styles */
+header {
+    background-color: black;
+}
+
+header h1 {
+    color: #ffd700; /* Header text color */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Navigation styles */
+nav ul li a {
+    color: red; /* Navigation links color */
+}
+
+nav ul li a:hover {
+    color: red; /* Navigation links color on hover */
+}
+
+/* Content styles */
+.text-box {
+    background-color: rgba(51, 48, 48, 0.8); /* Semi-transparent black background */
+}
+
+.text-box h2,
+.text-box p {
+    color: #ffd700; /* Text color */
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+/* Footer styles */
+footer {
+    color: #ffd700; /* Footer text color */
+}
+
+/* Toggle button styles */
+#theme-toggle {
+    background-color: red; /* Toggle button background color */
+    color: black; /* Toggle button text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#theme-toggle:hover {
+    background-color: red; /* Toggle button background color on hover */
+}

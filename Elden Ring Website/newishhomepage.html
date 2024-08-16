@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Ring Wiki</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/4f53a4fe23.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1><i class="fa-solid fa-ring"></i>ELDEN RING WIKI<i class="fa-solid fa-ring"></i></h1>
+        <button id="theme-toggle">Toggle Theme</button>
+    </header>
+    
+    <main>
+        <div class="content">
+            <div class="text-box">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="characters.html">Characters</a></li>
+                        <li><a href="eldenringme.html">Contact Me</a></li>
+                        <li><a href="DLC.html">DLC News</a></li>
+                    </ul>
+                </nav>
+                <div class="titleyo">
+                    <h2>General Elden Ring Information</h2>
+                    <p>Elden Ring is an upcoming action role-playing game developed by FromSoftware and published by Bandai Namco Entertainment. It is directed by Hidetaka Miyazaki, known for his work on the Souls series, and is set in a fantasy world created by Miyazaki and author George R. R. Martin(Author of the Game of Thrones series).</p>
+                </div>
+                <div class="shadowtree">
+                    <img src="georgie.png" alt="Left Image">
+                    <div class="shadowtree-content">
+                        <h2>George R. R. Martin</h2>
+                        <p>George R. R. Martin, an American author who most noteably wrote the Game of Thrones series, took sometime away from the series to help 
+                            Hidetaka Miyazaki write the story for Elden Ring. The story takes a lonley Tarnished (the player) and puts them on a quest for the Elden 
+                            Ring. The realm of The Lands Between are in utter chaos. Power hungry many gods, demi-gods, and demons are in search for the power to 
+                            control the land. It's all up to the Tarnished to restore order to the land.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="impaler">
+                    <img src="coollady.png" alt="Right Image">
+                    <div class="coolpic">
+                        <h2>Awards</h2>
+                        <p>Elden Ring won many gaming awards including the prestigeous 2022 Game of the Year award.
+                            Just to name a few: Best Game Direction, Best Art Direction, Best RPG of the Year.
+                            When I first played Elden Ring I was stunned by the sure quality and beauty of the game.
+                            There were too many times that I was playing and I just had to stop and take in the beautiful 
+                            atmosphere that I was in. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>This website was made by Jake for an assignment purpose.</p>
+    </footer>
+
+    <!-- Add the JavaScript code here -->
+    <script>
+        // Get the theme toggle button element
+        const themeToggleBtn = document.getElementById('theme-toggle');
+
+        // Add a click event listener to the toggle button
+        themeToggleBtn.addEventListener('click', function() {
+            // Get the <link> element that links to the new theme CSS file
+            const themeCSS = document.querySelector('link[href="dark-theme.css"]');
+
+            // If the new theme CSS file is linked, remove it; otherwise, add it
+            if (themeCSS) {
+                themeCSS.remove(); // Remove the new theme CSS file
+            } else {
+                // Add the new theme CSS file to the <head> element
+                const link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.href = 'dark-theme.css'; // Change to your new theme CSS file path
+                document.head.appendChild(link);
+            }
+        });
+    </script>
+</body>
+</html>

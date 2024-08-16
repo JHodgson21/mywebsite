@@ -1,0 +1,229 @@
+
+body {
+    background-image: url('eldenringpic.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    background-color: black; 
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    color: gold;
+}
+
+.text-box {
+    position: fixed;
+    top: 10%;
+    left: 7%;
+    width: 85%;
+    height: 80%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.text-box nav {
+    margin-bottom: 30px;
+}
+
+.text-box nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.text-box nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.text-box nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.text-box nav ul li a:hover {
+    color: gold;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.tab-pane h2,
+.tab-pane p {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+p {
+    color: white;
+    text-align: center;
+
+}
+
+.centered-content img {
+    max-width: 50%;
+    margin-bottom: 20px;
+
+}
+
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 30%;
+    padding-right: 30%;
+    text-align: left;
+}
+
+.centered-content, p {
+    text-align: center;
+}
+
+.george {
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.george img {
+    max-width: 28%;
+    height: auto;
+    float: left;
+    text-align: center;
+    
+}
+
+.coolpic {
+    float: right;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.coolpic img {
+    max-width: 20%;
+    height: auto;
+    float: right;
+}
+
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.character-item {
+    text-align: center;
+}
+
+.character-item img {
+    max-width: 50%;
+    height: auto;
+}
+
+.character-item p {
+    margin: 10px 0;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+}
+
+.about-item {
+    text-align: center;
+}
+
+.about-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-item p {
+    margin: 10px 0;
+}
+
+.titleyo {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.shadowtree {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.shadowtree img {
+    max-width: 30%;
+    height: auto;
+    margin-right: 40px;
+}
+
+.shadowtree-content {
+    flex: 1;
+    color: white;
+}
+
+.shadowtree-content a {
+    color: gold;
+    padding: 10px 20px;
+    text-decoration: none; 
+    border-radius: 5px;
+}
+
+
+.impaler {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.impaler img {
+    max-width: 30%;
+    height: auto;
+    margin-right: 40px;
+}
+
+.impaler-content {
+    flex: 1;
+    color: white;
+}
+
+.about-item a {
+    color: gold;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer p {
+    margin-top: 810px;
+    color: gold;
+    font-size: large;
+}

@@ -1,0 +1,34 @@
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'menu main main main right right'
+        'menu footer footer footer footer footer';
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px; /* Adjust font size */
+}
+
+.dlc-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.dlc-item img {
+    max-width: 200px; /* Set maximum width for images */
+    height: auto;
+    margin-right: 20px;
+}
+
+.dlc-item p {
+    font-size: 16px;
+    color: #333;
+}
